@@ -1,6 +1,8 @@
 How to run::
 
-1. Download and extract the project
+project can be found :: https://github.com/athineouc/projectA
+
+1. Download and extract or git clone the projec
 
 2. gradle wrapper
 
