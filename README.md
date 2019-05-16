@@ -18,13 +18,19 @@ for medium size(500mb) :: python3 CreateCsvFile.py medium
 for large size(2gb) :: python3 CreateCsvFile.py large (it take some time...)
 
 5. java -Xmx{size}m -jar build/libs/projectA.jar -fileName={fileName}    
+
 Arguments::
+
 {size} = the heap memory of the application (m :: in megabytes)
+
 {fileName} = the name of the file you want to process
 
 example:
+
 java -Xmx100m -jar build/libs/projectA.jar -fileName=small.csv
+
 size = 100mb
+
 fileName = small.csv
 
 
