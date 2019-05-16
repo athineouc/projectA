@@ -47,7 +47,7 @@ ItemWriter : to write the data to the destination source
 
 In my solution i have configure the ItemReader to read from a csv file given by the
 user as argument and mapping the rows to Person objects with 3 attributes
-(mail, firstName, lastName). In case of a valid row i am handling thrown by 
+(mail, firstName, lastName). In case of an invalid row i am handling the exception thrown by 
 spring batch and continue to the next line.
 
 For the ItemProcessor i have override the process method to just validate if the email
@@ -56,7 +56,7 @@ that it will be added to a list that takes the itemWritter as argument from spin
 otherwise return null.
 
 For ItemWritter i have override the write method to take a processed list of Persons,
-filter the null values, sleepping 0.5 seconds to emulate the process of sending email.
+filter the null values and sleepping 0.5 seconds to emulate the process of sending email.
 
 About memory::
 
