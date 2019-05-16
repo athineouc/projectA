@@ -10,8 +10,11 @@ project can be found :: https://github.com/athineouc/projectA
 
 4. Copy your csv file or Create one with CreateCsvFile.py script
 How to create csv file:
+
 for small size(2mb) :: python3 CreateCsvFile.py small
+
 for medium size(500mb) :: python3 CreateCsvFile.py medium
+
 for large size(2gb) :: python3 CreateCsvFile.py large (it take some time...)
 
 5. java -Xmx{size}m -jar build/libs/projectA.jar -fileName={fileName}    
